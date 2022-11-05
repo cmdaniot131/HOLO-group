@@ -1,0 +1,54 @@
+.header {
+    background: radial-gradient(rgb(254, 209, 30),#fffffe);
+    background-size: cover;
+    background-position: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.title {
+    background: #ff523b;
+    height: 10px;
+    width: 80px;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+
+.col-3 {    
+    transition: all 0.3s ease-in-out;
+}
+
+.col-3:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 18px #888888;
+}
+
+/* override Bootstrap's container */
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+}
+
+
+/* When the user scrolls down 50px from the top of the document, nav bar will slide down */
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+nav.autohide {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav.autohide a:hover {
+    background-color:rgb(255, 255, 255);
+    color: black;
+}
+/* End of nav bar slide down */
