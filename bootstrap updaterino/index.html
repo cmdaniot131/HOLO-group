@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - HOLO Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="autohide navbar navbar-expand-lg navbar-light" style="background-color: #ffe46b;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+            <img src="Images/HOLO STORE logo.png" width="55px" style="border-radius:40px;">
+            <span style="font-weight: bold;">HOLO Store</span>
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                
+                <li>
+                    <a class="nav-link" href="#products"><font size="+1.5">Home</font></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact"><font size="+1.5">Products</font></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="about.html"><font size="+1.5">About</font></a>
+                </li>
+                <li>
+                    <a class="btn" role="button" data-bs-toggle="modal" data-bs-target="#login"><img src="Images/profile.svg" width="30px" height="30px"></a>
+                </li>
+                <li>
+                    <a class="nav-link" href=""><img src="Images/cart.png" width="30px" height="30px"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!--Modal-->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body bg-image" style="background-image: url('https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png?w=681&h=383&crop=1');">
+            <div class="row mb-3">
+                <div class="col-4 fs-5 fw-bold" id="loginLabel">Log-in</div>
+                <div class="col-7"></div>
+                <div class="col-1"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign-in</button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!--Banner-->
+    <div class="header" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <h1 class="fw-bold">Cannot find what you are looking for in other websites?<br><em>HOLO</em> store got you covered!</h1>
+                    <p class="text-muted"><b>What are you waiting for? Start shopping at <em>HOLO store</em> now!</b></p>
+                    <a href="#Featured Products" class="btn btn-dark">Start Shopping</a>
+                </div>
+                <div class="col-6">
+                    <img src="Images/EcommerceItems.png" width="1000px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/HOLOxCLOTHO.png" class="d-block w-100" alt="..." height="750px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HOLO Store and CLOTHO Collaboration</h5>
+              <p><b>CLOTHO CEO Mr. Beldad decided to have a joint partnership to showcase his company produced fashion products in the HOLO store!</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/NEW ARRIVALS-1.png" class="d-block w-100" alt="..." height="750px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>New Partners means New Items!</h5>
+              <p><b><font size="+1.5">The arrivals of CLOTHO fashion products are going to be available at November 16, further updates will be announced</font></b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/CarouselBan3.png" class="d-block w-100" alt="..." height="750px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5></h5>
+              <p><b><font size="+1.5"></font></b></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <!--Featured Products-->
+    <div class="py-4 text-center" id="Featured Products">
+        <h2>Featured Products</h2>
+        <p class="text-center title"></p>
+        <div class="py-4 container">
+            <div class="row">
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Featured Item 1.png" class="img-fluid">
+                    <h4>Logitech G PRO X Gaming Keyboard</h4>
+                    <p>PHP 4,389.20</p>
+                    <a href="#Featured Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Featured Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Featured Item 2.png" class="img-fluid">
+                    <h4>Landing Leathers A-2 Bomber Jacket</h4>
+                    <p>PHP 14,252.50</p>
+                    <a href="#Featured Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Featured Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Featured Item 3.png" class="img-fluid">
+                    <h4>Hydroflask Standard Mouth 18oz (Yellow)</h4>
+                    <p>PHP 1,890.00</p>
+                    <a href="#Featured Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Featured Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Featured Item 4.png" class="img-fluid">
+                    <h4>Xbox Series X/S controller (Black)</h4>
+                    <p>PHP 3,295.00</p>
+                    <a href="#Featured Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Featured Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Recently Added Products-->
+    <div class="py-4 text-center" id="Recently Added Products">
+        <h2>Recently Added Products</h2>
+        <p class="text-center title"></p>
+        <div class="py-4 container">
+            <div class="row">
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Recent Items 1.png" class="img-fluid">
+                    <h4>GLORIOUS MOUSE BUNGEE (WHITE)</h4>
+                    <p>PHP 895.00</p>
+                    <a href="#Recently Added Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Recently Added Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Recent Items 2.png" class="img-fluid">
+                    <h4>SteelSeries QcK Hyperbeast (Extended)</h4>
+                    <p>PHP 1,500.00</p>
+                    <a href="#Recently Added Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Recently Added Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Recent Items 3.png" class="img-fluid">
+                    <h4>Universal Metal Headphone Stand Holder</h4>
+                    <p>PHP 455.00</p>
+                    <a href="#Recently Added Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Recently Added Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+                <div class="col-3 p-3 rounded">
+                    <img src="Images/Recent Items 4.png" class="img-fluid">
+                    <h4>BYEASY 4 Port USB 3.0 Hub (Ultra Slim)</h4>
+                    <p>PHP 1,478.00</p>
+                    <a href="#Recently Added Products" class="btn btn-primary">Buy Now</a>
+                    <a href="#Recently Added Products" class="btn btn-dark">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--What is HOLO section-->
+    <div class="py-4 text-center" id="AboutSection" >
+        <h2>What is HOLO store?</h2>
+        <p class="text-center title"></p>
+        <div class="py-4 container">
+            <center><p>
+                HOLO store is an independent e-commerce website where online shoppers have the oppurtunity to find
+                the items they want to buy that can be either out of stock on other websites or just doesn't have any 
+                stocks at all. We at HOLO value our customers as we sell them their items carefully through safe deliveries.
+                So cannot find what you're looking for? We have it at HOLO store, an item is just one click away for it to arive 
+                in your doorstep.
+               </p></center>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid" style="background-color: #181818;">
+        <footer class="py-3 text-center">
+            <h3 class="text-center fw-bold text-warning">HOLO STORE</h3>
+            <p class="text-white-50">Brought to you by HOLO E-Commerce Company Works</p>
+        </footer>
+    </div>
+    <div class="container-fluid" style="background-color: #000000;">
+        <footer class="py-2 text-center">
+            <p class="text-white-50">EST ©2022. Designed By HOLO</p>
+        </footer>
+    </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
