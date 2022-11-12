@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - HOLO Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="autohide navbar navbar-expand-lg navbar-light" style="background-color: #ffe46b;">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#home">
+              <img src="Images/HOLO STORE logo.png" width="55px" style="border-radius:40px;">
+              <span style="font-weight: bold;">HOLO Store</span>
+          </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  
+                  <li>
+                      <a class="nav-link" href="index.html"><font size="+1.5">Home</font></a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="index.html#products"><font size="+1.5">Products</font></a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href="about.html"><font size="+1.5">About</font></a>
+                  </li>
+                  <li>
+                      <a class="btn disabled active"><img src="Images/profile.svg" width="30px" height="30px"></a>
+                  </li>
+                  <li>
+                      <a class="nav-link" href=""><img src="Images/cart.png" width="30px" height="30px"></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  
+    <!--Registration Window (non-functional)-->
+    <section class="h-100 bg-dark">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="Images/background.png"
+                      alt="Sample photo" class="img-fluid"
+                      style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 fw-bold">Registration</h3>
+      
+                      <div class="row">
+                        <div class="col-md-6 mb-1">
+                          <div class="form-outline">
+                            <input type="text" id="fname" class="form-control form-control-lg" />
+                            <label class="form-label" for="fname">First name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-1">
+                          <div class="form-outline">
+                            <input type="text" id="lname" class="form-control form-control-lg" />
+                            <label class="form-label" for="lname">Last name</label>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="form-outline mb-1">
+                        <input type="text" id="address" class="form-control form-control-lg" />
+                        <label class="form-label" for="address">Address</label>
+                      </div>
+      
+                      <div class="d-md-flex justify-content-start align-items-center mb-4 py-1">
+      
+                        <h6 class="mb-0 me-4">Gender: </h6>
+      
+                        <div class="form-check form-check-inline mb-0 me-4">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                            value="option1" />
+                          <label class="form-check-label" for="femaleGender">Female</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline mb-0 me-4">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                            value="option2" />
+                          <label class="form-check-label" for="maleGender">Male</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline mb-0">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                            value="option3" />
+                          <label class="form-check-label" for="otherGender">Other</label>
+                        </div>
+      
+                      </div>
+      
+                      <div class="form-outline mb-2">
+                        <input type="date" id="form3Example9" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example9">Date of Birth</label>
+                      </div>
+      
+                      <div class="d-flex justify-content-end pt-3">
+                        <button type="button" class="btn btn-warning btn-lg ms-2" onclick="reset()">Sign-up</button>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--What is HOLO section-->
+    <div class="py-4 text-center" id="AboutSection" >
+        <h2>What is HOLO store?</h2>
+        <p class="text-center title"></p>
+        <div class="py-4 container">
+            <center><p>
+                HOLO store is an independent e-commerce website where online shoppers have the oppurtunity to find
+                the items they want to buy that can be either out of stock on other websites or just doesn't have any 
+                stocks at all. We at HOLO value our customers as we sell them their items carefully through safe deliveries.
+                So cannot find what you're looking for? We have it at HOLO store, an item is just one click away for it to arive 
+                in your doorstep.
+               </p></center>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid" style="background-color: #181818;">
+        <footer class="py-3 text-center">
+            <h3 class="text-center fw-bold text-warning">HOLO STORE</h3>
+            <p class="text-white-50">Brought to you by HOLO E-Commerce Company Works</p>
+        </footer>
+    </div>
+    <div class="container-fluid" style="background-color: #000000;">
+        <footer class="py-2 text-center">
+            <p class="text-white-50">EST ©2022. Designed By HOLO</p>
+        </footer>
+    </div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
