@@ -1,0 +1,33 @@
+<%@page import="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cart</title>
+</head>
+<body>
+<% 
+String ProdName = ("RK87 TRI-MODE 87 Key Hot Swappable Mechanical Keyboard");
+String ProdDesc = ("Contains Blue Switch Variation and Hot Swappable Outemu Sockets");
+String ProdCategory = ("Keyboards");
+String ProdPrice = ("2695");
+String Qty = ("1");
+
+
+try {
+	Class.forName("com.mysql.jdbc.Driver");
+	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/727_db","root","$Daniot147852");
+	Statement st=con.createStatement();
+	st.executeUpdate("insert into products(name,description,category,price,qty) values('"+ProdName+"','"+ProdDesc+"','"+ProdCategory+"','"+ProdPrice+"','"+Qty+"')");
+	response.sendRedirect("Cart.jsp");
+}
+catch(Exception e){
+	response.sendRedirect("CartFailed.html");
+}
+%>
+
+
+</body>
+</html>
