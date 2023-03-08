@@ -1,0 +1,21 @@
+CREATE TABLE `Products` (
+  `Product_ID` bigint NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) DEFAULT NULL,
+  `Description` varchar(255) DEFAULT NULL,
+  `Category` varchar(255) DEFAULT NULL,
+  `price` decimal(20,2) DEFAULT NULL,
+  `Image_URL` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Product_ID`)
+);
+
+INSERT INTO `products` VALUES (1,'RK87 TRI-MODE 87 Key Hot Swappable Mechanical Keyboard','Contains Blue Switch Variation and Hot Swappable Outemu Sockets','Keyboards',2695.00,'Images\\Item1.png'),(2,'Tecware PBT 2-Tone 120 Keycap Set Cherry MX (White/Grey)','Contains White/Grey Variation PBT Keycaps','Keycaps',675.00,'Images\\Item2.png'),(3,'(READY STOCK) Akko CS Radiant Red Mechanical Switches','45 pieces of AKKO CS Radiant Red Mechanical Keyboard Switches','Switches',520.00,'Images\\Item3.png'),(4,'2mm EVA Foam | Mechanical Keyboard Case Sound Dampening Foam','','Cases',172.70,'Images\\Item4.png');
+
+DROP TABLE IF EXISTS `cart`;
+CREATE TABLE `cart` (
+  `Order_ID` int NOT NULL AUTO_INCREMENT,
+  `Product_ID` bigint DEFAULT NULL,
+  `qty` int DEFAULT NULL,
+  PRIMARY KEY (`Order_ID`),
+  KEY `Product_ID` (`Product_ID`),
+  CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`Product_ID`) REFERENCES `products` (`Product_ID`)
+);
